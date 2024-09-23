@@ -1,0 +1,53 @@
+body{
+    font-family: var(--font-main);
+    font-weight: 400;
+
+    @include elastic-text(16, 18);
+
+    line-height: 22.97px;
+    color: var(--c-light);
+    background-color: var(--c-bg);
+}
+
+a,
+button,
+textarea,
+input,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+
+    @include hover{
+        color: var(--c-accent);
+    }
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2, 
+h3, 
+h4 {
+    font-weight: 500;
+}
+
+h1, .h1{
+    @include elastic-text(40, 76);
+}
+
+h2, .h2{
+    @include elastic-text(40, 54);
+}
+
+h3, .h3{
+    @include elastic-text(24, 28);
+}
+
+h4, .h4{
+    @include elastic-text(18, 20);
+}

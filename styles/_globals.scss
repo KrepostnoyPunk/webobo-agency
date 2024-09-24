@@ -4,7 +4,7 @@ body{
 
     @include elastic-text(16, 18);
 
-    line-height: 22.97px;
+    line-height: 23px;
     color: var(--c-light);
     background-color: var(--c-bg);
 }
@@ -37,11 +37,11 @@ h4 {
 }
 
 h1, .h1{
-    @include elastic-text(40, 76);
+    @include elastic-text(48, 56);
 }
 
 h2, .h2{
-    @include elastic-text(40, 54);
+    @include elastic-text(40, 46);
 }
 
 h3, .h3{
@@ -50,4 +50,8 @@ h3, .h3{
 
 h4, .h4{
     @include elastic-text(18, 20);
+}
+
+span{
+    color: var(--c-accent);
 }

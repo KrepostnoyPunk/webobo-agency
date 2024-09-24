@@ -1,0 +1,27 @@
+.cross-btn{
+    @include reset-btn;
+
+    @include square (36px);
+
+    position: relative;
+
+    &::before,
+    &::after{
+        content: '';
+        position: absolute;
+        top: 50;
+        left: 7px;
+        width: 70%;
+        height: 1.5px;
+        background-color: var(--c-accent);
+        border-radius: 2px;
+    }
+
+    &::before{
+        rotate: 45deg;
+    }
+
+    &::after{
+        rotate: -45deg;
+    }
+}

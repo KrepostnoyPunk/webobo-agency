@@ -1,0 +1,29 @@
+.btn{
+    height: var(--btn-height);
+    padding: 20px 20px;
+    background-color: transparent;
+    border:1px solid transparent;
+    box-shadow: var(--box-shadow);
+    display: inline-flex;
+    align-items: center;
+    border-radius: var(--btn-border-radius);
+
+    @include hover{
+        color: var(--c-light);
+        border: var(--border-accent);
+    }
+
+    &--header{
+        border: var(--border-accent);
+
+        @include hover{
+            border: 1px solid transparent;
+            scale: 1.1;
+        }
+
+        @include tablet{
+            padding: 15px 15px;
+            height: 55px;
+        }
+    }
+}

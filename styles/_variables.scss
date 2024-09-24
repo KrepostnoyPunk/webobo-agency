@@ -1,11 +1,11 @@
 :root{
     --c-bg: #191820;
+    --c-black: #000000;
     --c-accent: #ae8bf8;
     --c-light: #ececec;
     --c-white: #ffffff;
-    --c-dark-for-shadow: #000;
    
-    --border: 1px solid var(--c-accent);
+    --border-accent: 1px solid var(--c-accent);
 
     --btn-border-radius: 16px;
     --input-border-radius: 10px;
@@ -17,8 +17,8 @@
 
     --circle-radius: 50%;
 
-    --box-shadow-3: -4px -4px 12px hsla(0, 0%, 100%, .05), 4px 4px 12px var(--c-dark-for-shadow);
-    --box-shadow-3-transparent: -4px -4px 12px hsla(0, 0%, 100%, 0), 4px 4px 12px transparent;
+    --box-shadow: -4px -4px 12px hsla(0, 0%, 100%, .05), 4px 4px 12px var(--c-black);
+    --box-shadow-transparent: -4px -4px 12px hsla(0, 0%, 100%, 0), 4px 4px 12px transparent;
     --box-shadow-inset: inset -22px -14px 14px 2px hsla(0, 0%, 100%, .015), inset 8px 4px 20px 12px rgba(0, 0, 0, .8);
     --box-shadow-inset-transparent: inset -22px -14px 14px 2px hsla(0, 0%, 100%, 0), inset 8px 4px 20px 12px transparent;
 
@@ -26,15 +26,15 @@
     --font-H1: 'Merriweather-Black', sans-serif;
     --font-headers: 'Merriweather-Bold', sans-serif;
 
-    --container-width: 1376px;
+    --container-width: 1240px;
 
-    --container-padding-x: 32px;
+    --container-padding-x: 15px;
 
     --section-padding-y: 100px;
 
     --input-height: 70px;
 
-    --btn-height: 71px;
+    --btn-height: 61px;
 
-    --transition-duration: .2s;
+    --transition-duration: .3s;
 }

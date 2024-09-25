@@ -1,3 +1,7 @@
 .section{
     padding-block: var(--section-padding-y);
+
+    @include mobile-s{
+        padding-block: 35px;
+    }
 }

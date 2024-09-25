@@ -8,6 +8,11 @@
     align-items: center;
     border-radius: var(--btn-border-radius);
 
+    @include tablet{
+        padding: 15px 15px;
+        height: 55px;
+    }
+
     @include hover{
         color: var(--c-light);
         border: var(--border-accent);
@@ -19,11 +24,6 @@
         @include hover{
             border: 1px solid transparent;
             scale: 1.1;
-        }
-
-        @include tablet{
-            padding: 15px 15px;
-            height: 55px;
         }
     }
 }

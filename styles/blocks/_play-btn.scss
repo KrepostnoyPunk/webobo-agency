@@ -1,0 +1,9 @@
+.play-btn{
+    @include square(51px);
+        border: var(--border-accent);
+        padding: 10px 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border-radius: var(--circle-radius);
+}

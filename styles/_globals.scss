@@ -37,15 +37,31 @@ h4 {
 }
 
 h1, .h1{
-    @include elastic-text(48, 56);
+    @include elastic-text(42, 54);
+
+    @include mobile{
+        @include elastic-text(30, 54);
+    }
+
+    @include mobile-s{
+        @include elastic-text(26, 28);
+    }
 }
 
 h2, .h2{
-    @include elastic-text(40, 46);
+    @include elastic-text(44, 46);
+
+    @include mobile{
+        @include elastic-text(28, 42);
+    }
+
+    @include mobile-s{
+        @include elastic-text(24, 26);
+    }
 }
 
 h3, .h3{
-    @include elastic-text(24, 28);
+    @include elastic-text(22, 26);
 }
 
 h4, .h4{

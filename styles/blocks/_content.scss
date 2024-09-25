@@ -1,4 +1,4 @@
-.hero{
+.content{
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -18,25 +18,25 @@
     &__body{
         display: flex;
         flex-direction: column;
-        row-gap: 56px;
+        row-gap: 40px;
         align-items: start;
 
         @include desktop-above{
-            max-width: 400px;
+            max-width: 517px;
         }
 
         @include desktop{
-            max-width: 350px;
+            max-width: 450px;
         }
 
         @include tablet{
-            max-width: 265px;
+            max-width: 360px;
         }
 
         @include mobile{
             align-items: center;
             row-gap: 40px;
-            display: contents;
+            order: -1;
         }
 
         @include mobile-s{
@@ -45,14 +45,10 @@
     }
 
     &__title{
-        line-height: 80px;
-
-        @include tablet{
-            line-height: 60px;
-        }
+        line-height: 60px;
 
         @include mobile{
-            order: -2;
+            line-height: 40px;
         }
     }
 
@@ -60,9 +56,26 @@
         max-width: 517px;
     }
 
-    &__img{
-        @include mobile{
-            order: -1;
+    &__actions{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       column-gap: 60px;
+
+       @include tablet{
+            column-gap: 50px;
         }
+
+        @include mobile-s{
+            flex-direction: column;
+            row-gap: 40px;
+        }
+    }
+
+    &__play-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
     }
 }

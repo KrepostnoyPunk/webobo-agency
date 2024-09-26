@@ -716,4 +716,32 @@ span {
   justify-content: center;
   -moz-column-gap: 20px;
        column-gap: 20px;
+}
+
+.services__body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.services__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.services__li-group__1, .services__li-group__2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.services__item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.services__item__title::before {
+  content: "0" counter(custom);
+  font-size: 36px;
 }/*# sourceMappingURL=styles.css.map */

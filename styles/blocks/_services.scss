@@ -1,0 +1,39 @@
+.services{
+    
+    &__body{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        column-gap: 40px;
+    }
+
+    &__li-group__1, 
+    &__li-group__2{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+
+        &__title{
+
+            &::before{
+                content: '0' counter(custom);
+                font-size: 36px;
+            }
+
+        }
+    }
+
+}

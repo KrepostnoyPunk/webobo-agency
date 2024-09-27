@@ -1,0 +1,39 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    row-gap: 40px;
+    box-shadow: var(--shadowBefore);
+    border-radius: var(--card-border-radius);
+    transition: var(--transition-duration) ease-in-out;
+
+    @include tablet{
+        padding: 30px;
+    }
+
+    @include mobile{
+        padding: 20px;
+        max-width: 288px;
+    }
+
+    @include hover{
+        box-shadow: var(--shadowAfter);
+        scale: 1.05;
+    }
+
+    &__img{
+        border-radius: var(--circle-radius);
+        border: 3px solid var(--c-accent);
+        height: auto;
+
+        @include tablet{
+            width: 60%;
+        }
+
+        @include mobile{
+            width: 50%;
+        }
+    }
+}

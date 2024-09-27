@@ -22,6 +22,9 @@
     --box-shadow-inset: inset -22px -14px 14px 2px hsla(0, 0%, 100%, .015), inset 8px 4px 20px 12px rgba(0, 0, 0, .8);
     --box-shadow-inset-transparent: inset -22px -14px 14px 2px hsla(0, 0%, 100%, 0), inset 8px 4px 20px 12px transparent;
 
+    --shadowBefore: var(--box-shadow), var(--box-shadow-inset-transparent);
+    --shadowAfter: var(--box-shadow-transparent), var(--box-shadow-inset);
+
     --font-main: 'Merriweather-Regular', sans-serif;
 
     --container-width: 1280px;

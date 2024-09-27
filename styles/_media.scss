@@ -7,8 +7,8 @@ $tablet: 1023px;
 $mobile-above: 768px;
 $mobile: 767px;
 
-$mobile-s-above: 361px;
-$mobile-s: 360px;
+$mobile-s-above: 391px;
+$mobile-s: 390px;
 
 // миксины позволяющие вписывать медиа запросы непосредственно в селектор тем самым уменьшая объем и путаницу медиа запросов
 @mixin desktop-above {

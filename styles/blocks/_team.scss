@@ -1,0 +1,23 @@
+.team{
+
+    &__title{
+        padding-bottom: 60px;
+    }
+
+    &__list{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px 30px;
+
+        @include tablet{
+            grid-template-columns: minmax(320px, 320px) minmax(320px, 320px);
+            column-gap: 80px;
+        }
+
+        @include mobile{
+            grid-template-columns: minmax(280px, 300px);
+        }
+    }
+}

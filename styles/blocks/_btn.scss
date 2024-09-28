@@ -7,6 +7,8 @@
     display: inline-flex;
     align-items: center;
     border-radius: var(--btn-border-radius);
+    color: var(--c-light);
+    cursor: pointer;
 
     @include tablet{
         padding: 15px 15px;

@@ -3,7 +3,6 @@
     &__body{
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
         row-gap: 60px;
     }
@@ -11,7 +10,16 @@
     &__list{
         display: flex;
         align-items: center;
+        justify-content: center;
         column-gap: 60px;
+
+        @include mobile{
+            column-gap: 35px;
+        }
+    }
+
+    &__btn{
+        align-self: center;
     }
 
 }

@@ -1,0 +1,84 @@
+.footer{
+
+    &__main{
+        padding-block: 80px;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 80px;
+
+        @include tablet{
+            flex-direction: column;
+            align-items: center;
+            row-gap: 40px;
+        }
+
+        @include mobile{
+            row-gap: 20px;
+        }
+    }
+
+    &__contacts{
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+
+        &-contacts{
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+        }
+
+        @include tablet{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            row-gap: 20px;
+        }
+    }
+
+    &__list{
+        display: flex;
+        column-gap: 80px;
+
+        @include tablet{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            row-gap: 40px;
+
+            h4{
+                color: var(--c-accent);
+            }
+        }
+
+        @include mobile{
+            row-gap: 20px;
+        }
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        row-gap: 17px;
+    }
+
+    &__extra{
+        border-top: 1px solid var(--c-accent);
+        padding-block: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mobile{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            row-gap: 24px;
+        }
+    }
+
+    &__policies{
+        display: flex;
+        column-gap: 60px;
+    }
+}

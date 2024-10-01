@@ -15,6 +15,21 @@
         row-gap: 40px;
     }
 
+    &--contact{
+        @include tablet{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__img{
+        &--contact{
+            @include mobile{
+                order: -1;
+            }
+        }
+    }
+
     &__body{
         display: flex;
         flex-direction: column;
@@ -46,6 +61,12 @@
 
     &__title{
         line-height: 60px;
+
+        &--contact{
+            @include tablet{
+                text-align: center;
+            }
+        }
 
         @include mobile{
             line-height: 40px;

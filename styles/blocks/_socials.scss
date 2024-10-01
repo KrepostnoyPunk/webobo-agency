@@ -1,0 +1,18 @@
+.socials{
+
+    &__list{
+        display: flex;
+        align-items: center;
+        column-gap: 25px;
+    }
+
+    &__item{
+
+        svg{
+            @include square(35px);
+        }
+
+        
+    }
+
+}

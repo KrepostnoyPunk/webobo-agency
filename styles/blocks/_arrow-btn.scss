@@ -1,0 +1,24 @@
+.arrow-btn{
+
+    @include reset-btn;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--c-light);
+    padding: 30px 15px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    border: 1px solid transparent;
+
+    @include hover{
+        border: var(--border-accent);
+        cursor: pointer;
+        color: var(--c-accent);
+    }
+
+    @include mobile-s{
+        padding: 20px 10px;
+    }
+
+}

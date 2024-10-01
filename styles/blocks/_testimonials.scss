@@ -16,6 +16,11 @@
         scroll-snap-type: x mandatory;
         overflow-x: scroll;
         width: 80vw;
+        padding: 10px;
+
+        @include mobile{
+            width: 100vw;
+        }
     }
 
     &__item{
@@ -24,12 +29,17 @@
         align-items: center;
         justify-content: center;
         row-gap: 24px;
-        padding: 60px 50px;
+        padding: 60px 40px;
         border: var(--border-accent);
-        border-radius: var(--testimonial-border-radius);
+        border-radius: 170px;
+        scroll-snap-align: center;
 
         &--central{
-            padding: 120px 50px;
+            padding: 130px 40px;
+        }
+
+        @include mobile-s{
+            padding: 40px 15px;
         }
     }
 
@@ -39,8 +49,13 @@
     }
 
     &__review{
-        max-width: 530px;
+        text-align: center;
+        min-width: 360px;
         width: 100%;
+
+        @include mobile{
+            min-width: 300px;
+        }
     }
 
     &__info{
@@ -49,5 +64,16 @@
         flex-direction: column;
         text-align: center;
         row-gap: 6px;
+    }
+
+    &__actions{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 100px;
+
+        @include mobile-s{
+            column-gap: 50px;
+        }
     }
 }

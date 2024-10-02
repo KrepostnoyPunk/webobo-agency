@@ -18,6 +18,7 @@
 
     &__item{
 
+        background-color: var(--c-accent);
         transition: var(--transition-duration) ease-in-out; 
         
         @include hover{
@@ -39,8 +40,7 @@
     &__item:nth-child(1){
         grid-column: 1 / 4;
         grid-row: 1/ 4;
-        background-image: url('./assets/images/portfolio-1.jpg');
-
+        background-image: url('https://i.pinimg.com/236x/45/42/6f/45426f0e158bf363b1d4d881610b7abc.jpg');
         @include tablet{
             grid-column: 1 / 4;
             grid-row: 1 / 2;
@@ -55,7 +55,7 @@
     &__item:nth-child(2){
         grid-column: 4 / 8;
         grid-row: 1 / 5;
-        background-image: url('./assets/images/portfolio-2.jpg');
+        background-image: url('https://plus.unsplash.com/premium_photo-1694822449585-a2444c288b96?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D');
 
         @include tablet{
             grid-column: 4 / 7;
@@ -71,7 +71,7 @@
     &__item:nth-child(3){
         grid-column: 8 / 12;
         grid-row: 1 / 3;
-        background-image: url('./assets/images/portfolio-3.jpg');
+        background-image: url('https://images.unsplash.com/photo-1719937051230-8798ae2ebe86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMXx8fGVufDB8fHx8fA%3D%3D');
 
         @include tablet{
             grid-column: 1 / 4;
@@ -87,7 +87,7 @@
     &__item:nth-child(4){
         grid-column: 1 / 4;
         grid-row: 4 / 7;
-        background-image: url('./assets/images/portfolio-4.jpg');
+        background-image: url('https://i.pinimg.com/236x/9c/27/43/9c2743bc30c33f7cf716a174e17c4ed1.jpg');
 
         @include tablet{
             grid-column: 4 / 7;
@@ -98,7 +98,7 @@
     &__item:nth-child(5){
         grid-column: 8 / 12;
         grid-row: 3 / 5;
-        background-image: url('./assets/images/portfolio-5.jpg');
+        background-image: url('https://images.unsplash.com/photo-1631617945663-bc6a0f22834e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8eWFuZGV4fGVufDB8fDB8fHww');
 
         @include tablet{
             grid-column: 1 / 4;
@@ -109,7 +109,7 @@
     &__item:nth-child(6){
         grid-column: 4 / 12;
         grid-row: 5 / 7;
-        background-image: url('./assets/images/portfolio-6.jpg');
+        background-image: url('https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 
         @include tablet{
             grid-column: 4 / 7;
